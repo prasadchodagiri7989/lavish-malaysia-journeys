@@ -65,21 +65,30 @@ const Index = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60 z-10"></div>
         
-        {/* Video Background */}
-        <div className="absolute inset-0 w-full h-full">
-          <div className="relative w-full h-full bg-cover bg-center bg-no-repeat" 
-               style={{
-                 backgroundImage: `url('https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`
-               }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
-          </div>
-        </div>
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          className="w-full h-full object-cover scale-125"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source
+            src="https://res.cloudinary.com/dbtkas8kr/video/upload/v1750537303/videoplayback_1_apftn3.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/50"></div>
+      </div>
 
         {/* Hero Content */}
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              🌴 Your Gateway to <span className="text-emerald-400">Malaysia</span>
+              Your Gateway to <span className="text-emerald-400">Malaysia</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
               Tailor-made journeys. Local expertise. Authentic experiences.
@@ -91,7 +100,7 @@ const Index = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 text-lg font-semibold transition-all hover:scale-105">
+                <Button size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-gray-900 px-8 py-3 text-lg font-semibold transition-all hover:scale-105">
                   Contact Us
                 </Button>
               </Link>
@@ -264,10 +273,12 @@ const Index = () => {
                 Get Quote
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-3 text-lg font-semibold">
-              <Phone className="w-5 h-5 mr-2" />
-              Call Now
-            </Button>
+            <Link to="/">
+              <Button size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-emerald-600 px-8 py-3 text-lg font-semibold">
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
