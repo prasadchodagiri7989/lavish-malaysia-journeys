@@ -21,21 +21,25 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Packages", path: "/packages" },
+    { name: "Packages", path: "/all-packages" },
     { name: "Destinations", path: "/destinations" },
     { name: "Travel Info", path: "/travel-info" },
     { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
+  // Add this inside your component (already present)
+  const isHome = location.pathname === '/';
+
 
   return (
       <nav className={`fixed top-0 left-0 right-0 h-16 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
+        isHome
+          ? (isScrolled
+              ? 'bg-white/95 backdrop-blur-md shadow-lg'
+              : 'bg-transparent')
+          : 'bg-white/95 backdrop-blur-md shadow-lg'
       }`}>
-
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -43,12 +47,17 @@ const Navigation = () => {
             <MapPin className="w-8 h-8 text-emerald-600" />
             <div>
               <div className={`text-xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}>Lavish Holidays</div>
+                !isHome ? 'text-gray-900' : !isScrolled ? 'text-white' : 'text-gray-900'
+              }`}>
+                Lavish Holidays
+              </div>
               <div className={`text-xs transition-colors duration-300 ${
-                isScrolled ? 'text-gray-600' : 'text-gray-200'
-              }`}>DMC</div>
+                !isHome ? 'text-gray-600' : !isScrolled ? 'text-gray-200' : 'text-gray-600'
+              }`}>
+                DMC
+              </div>
             </div>
+
           </Link>
 
           {/* Desktop Navigation */}
@@ -58,11 +67,13 @@ const Navigation = () => {
                 key={item.name}
                 to={item.path}
                 className={`text-sm font-medium transition-colors hover:text-emerald-600 ${
-                  isActive(item.path) 
-                    ? "text-emerald-600" 
-                    : isScrolled 
-                      ? "text-gray-700" 
-                      : "text-white"
+                  isActive(item.path)
+                    ? "text-emerald-600"
+                    : !isHome
+                      ? "text-gray-700"
+                      : !isScrolled
+                        ? "text-white"
+                        : "text-gray-700"
                 }`}
               >
                 {item.name}
@@ -80,12 +91,13 @@ const Navigation = () => {
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
               className={`transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
+                !isHome ? 'text-gray-900' : !isScrolled ? 'text-white' : 'text-gray-900'
               }`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
           </div>
+
         </div>
 
         {/* Mobile Navigation */}
