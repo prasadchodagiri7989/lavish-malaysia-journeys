@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
+import PackageCard from "@/components/PackageCard";
+import { packagesData } from "@/data/packages";
 
 const Index = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -55,6 +57,9 @@ const Index = () => {
       description: "To continuously exceed our clients' expectations by delivering world-class service and fostering meaningful cultural exchanges."
     }
   ];
+
+  // Get first 3 packages for popular section
+  const popularPackages = packagesData.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white">
@@ -161,6 +166,30 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Packages Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Popular Packages</h2>
+            <p className="text-xl text-gray-600">Experience our most loved Malaysian adventures</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {popularPackages.map((pkg) => (
+              <PackageCard key={pkg.id} {...pkg} />
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <Link to="/all-packages">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+                View More Packages
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
