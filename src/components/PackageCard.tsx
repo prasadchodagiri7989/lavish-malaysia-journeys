@@ -149,7 +149,8 @@ const PackageCard = ({
 
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-white w-full text-lg py-3"
+              className="bg-brand-500 hover:bg-brand-600 text-white flex-1"
+
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               Book Now via WhatsApp
@@ -200,7 +201,7 @@ const PackageCard = ({
         <div className="flex gap-2">
           <Button 
             onClick={handleWhatsAppClick}
-            className="bg-green-500 hover:bg-green-600 text-white flex-1"
+            className="bg-brand-500 hover:bg-brand-600 text-white flex-1"
           >
             <MessageCircle className="w-4 h-4 mr-2" />
             Book Now

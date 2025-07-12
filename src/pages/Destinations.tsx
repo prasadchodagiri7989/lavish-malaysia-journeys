@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Camera, Clock } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const Destinations = () => {
   const destinations = [
@@ -63,7 +64,7 @@ const Destinations = () => {
       <WhatsAppButton />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-brandld-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Discover Malaysia</h1>
@@ -90,7 +91,7 @@ const Destinations = () => {
                   </div>
                   <CardContent className="md:w-3/5 p-6">
                     <div className="flex items-center gap-2 mb-2">
-                      <MapPin className="w-5 h-5 text-emerald-600" />
+                      <MapPin className="w-5 h-5 text-brand-600" />
                       <h3 className="text-2xl font-bold text-gray-900">{destination.name}</h3>
                     </div>
                     
@@ -103,7 +104,7 @@ const Destinations = () => {
                       <div className="grid grid-cols-2 gap-2">
                         {destination.highlights.map((highlight, idx) => (
                           <div key={idx} className="flex items-center gap-2">
-                            <div className="w-1.5 h-1.5 bg-emerald-600 rounded-full"></div>
+                            <div className="w-1.5 h-1.5 bg-brand-600 rounded-full"></div>
                             <span className="text-xs text-gray-700">{highlight}</span>
                           </div>
                         ))}
@@ -122,10 +123,10 @@ const Destinations = () => {
                     </div>
                     
                     <div className="flex gap-2">
-                      <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 flex-1 text-xs">
+                      <Button size="sm" className="bg-brand-600 hover:bg-brand-700 flex-1 text-xs">
                         View Packages
                       </Button>
-                      <Button size="sm" variant="outline" className="border-emerald-600 text-emerald-600 text-xs">
+                      <Button size="sm" variant="outline" className="border-brand-600 text-brand-600 text-xs">
                         Learn More
                       </Button>
                     </div>
@@ -150,21 +151,21 @@ const Destinations = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Peninsula Malaysia</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-brand-600 rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">West Coast</h4>
                     <p className="text-gray-600 text-sm">Kuala Lumpur, Penang, Langkawi, Melaka</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-brand-600 rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">East Coast</h4>
                     <p className="text-gray-600 text-sm">Perhentian Islands, Redang, Terengganu</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-brand-600 rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Central Highlands</h4>
                     <p className="text-gray-600 text-sm">Cameron Highlands, Genting Highlands</p>
@@ -177,14 +178,14 @@ const Destinations = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Malaysian Borneo</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-brandld-600 rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Sabah</h4>
                     <p className="text-gray-600 text-sm">Kota Kinabalu, Mount Kinabalu, Sipadan</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-brandld-600 rounded-full mt-2"></div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Sarawak</h4>
                     <p className="text-gray-600 text-sm">Kuching, Mulu Caves, Orangutan Sanctuaries</p>
@@ -197,22 +198,23 @@ const Destinations = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-emerald-600">
+      <section className="py-20 bg-brand-600">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Explore These Destinations?</h2>
-          <p className="text-xl text-emerald-100 mb-8">
+          <p className="text-xl text-brand-100 mb-8">
             Let us create the perfect itinerary for your Malaysian adventure
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-brand-600 hover:bg-gray-100">
               Plan My Trip
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-emerald-600">
+            <Button size="lg" variant="outline" className="border-white text-brand hover:bg-white hover:text-brandld-600">
               View All Packages
             </Button>
           </div>
         </div>
       </section>
+    <Footer />
     </div>
   );
 };

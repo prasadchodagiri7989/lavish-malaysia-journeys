@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <MapPin className="w-6 h-6 text-emerald-400" />
-              <div>
-                <div className="text-lg font-bold">Lavish Holidays</div>
-                <div className="text-xs text-gray-400">DMC</div>
-              </div>
-            </Link>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/assets/logo.png"
+              alt="Lavish Holidays Logo"
+              className="h-12 w-auto transition-opacity duration-300"
+            />
+          </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Your trusted partner in creating authentic Malaysian travel experiences. 
               Local expertise, tailor-made journeys.
@@ -62,15 +62,15 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-emerald-400" />
+                <Phone className="w-4 h-4 text-brand-400" />
                 <span className="text-gray-400 text-sm">+60 12 345 6789</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-emerald-400" />
+                <Mail className="w-4 h-4 text-brand-400" />
                 <span className="text-gray-400 text-sm">info@lavishholidaysdmc.com</span>
               </div>
               <div className="flex items-center gap-2">
-                <MessageCircle className="w-4 h-4 text-emerald-400" />
+                <MessageCircle className="w-4 h-4 text-brand-400" />
                 <span className="text-gray-400 text-sm">WhatsApp Available 24/7</span>
               </div>
             </div>

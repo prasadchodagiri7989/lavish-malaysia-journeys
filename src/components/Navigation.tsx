@@ -33,31 +33,26 @@ const Navigation = () => {
 
 
   return (
-      <nav className={`fixed top-0 left-0 right-0 h-16 z-50 transition-all duration-300 ${
-        isHome
-          ? (isScrolled
-              ? 'bg-white/95 backdrop-blur-md shadow-lg'
-              : 'bg-transparent')
-          : 'bg-white/95 backdrop-blur-md shadow-lg'
-      }`}>
+<nav
+  style={{ height: '64px', transform: 'translateZ(0)', willChange: 'transform' }}
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    isHome
+      ? isScrolled
+        ? 'bg-brand backdrop-blur-md shadow-lg'
+        : 'bg-transparent'
+      : 'bg-brand backdrop-blur-md shadow-lg'
+  }`}
+>
+
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <MapPin className="w-8 h-8 text-brand-600" />
-            <div>
-              <div className={`text-xl font-bold transition-colors duration-300 ${
-                !isHome ? 'text-gray-900' : !isScrolled ? 'text-white' : 'text-gray-900'
-              }`}>
-                Lavish Holidays
-              </div>
-              <div className={`text-xs transition-colors duration-300 ${
-                !isHome ? 'text-gray-600' : !isScrolled ? 'text-gray-200' : 'text-gray-600'
-              }`}>
-                DMC
-              </div>
-            </div>
-
+          <Link to="/" className="flex items-center">
+            <img
+              src="/assets/logo.png"
+              alt="Lavish Holidays Logo"
+              className="h-12 w-auto transition-opacity duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,20 +61,20 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-brand-600 ${
+                className={`text-sm font-medium transition-colors hover:text-yellow-600 ${
                   isActive(item.path)
-                    ? "text-brand-600"
+                    ? "text-yellow-600"
                     : !isHome
-                      ? "text-gray-700"
+                      ? "text-white"
                       : !isScrolled
                         ? "text-white"
-                        : "text-gray-700"
+                        : "text-white"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="bg-brand-600 hover:bg-brand-700">
+            <Button size="sm" className="bg-yellow-600 hover:bg-yellow-700">
               Book Now
             </Button>
           </div>
@@ -108,8 +103,8 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-brand-600 ${
-                    isActive(item.path) ? "text-brand-600" : "text-gray-700"
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-yellow-600 ${
+                    isActive(item.path) ? "text-yellow-600" : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -117,7 +112,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button size="sm" className="bg-brand-600 hover:bg-brand-700 w-full">
+                <Button size="sm" className="bg-yellow-600 hover:bg-yellow-700 w-full">
                   Book Now
                 </Button>
               </div>

@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -83,7 +84,7 @@ const Contact = () => {
       <WhatsAppButton />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-brand-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
@@ -165,7 +166,7 @@ const Contact = () => {
                     
                     <Button 
                       type="submit" 
-                      className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3"
+                      className="w-full bg-brand-600 hover:bg-brand-700 text-white py-3"
                     >
                       Send Message
                     </Button>
@@ -177,11 +178,11 @@ const Contact = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Prefer to call or chat?</h3>
                 <div className="flex gap-4">
-                  <Button className="flex-1 bg-green-500 hover:bg-green-600 text-white">
+                  <Button className="flex-1 bg-brand-500 hover:bg-brand-600 text-white">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp Chat
                   </Button>
-                  <Button variant="outline" className="flex-1 border-emerald-600 text-emerald-600">
+                  <Button variant="outline" className="flex-1 border-brand-600 text-brand-600">
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now
                   </Button>
@@ -198,8 +199,8 @@ const Contact = () => {
                   <Card key={index} className="hover:shadow-lg transition-shadow">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="bg-emerald-100 p-3 rounded-lg">
-                          <info.icon className="w-6 h-6 text-emerald-600" />
+                        <div className="bg-brand-100 p-3 rounded-lg">
+                          <info.icon className="w-6 h-6 text-brand-600" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-gray-900 mb-2">{info.title}</h3>
@@ -265,6 +266,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

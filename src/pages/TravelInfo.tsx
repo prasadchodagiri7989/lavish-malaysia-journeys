@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Plane, FileText, Shield, DollarSign, Thermometer, MapPin, Clock, Utensils } from "lucide-react";
-
+import Footer from "@/components/Footer";
 const TravelInfo = () => {
   const smartTips = [
     {
@@ -99,7 +99,7 @@ const TravelInfo = () => {
       <WhatsAppButton />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-brand-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Travel Information</h1>
@@ -120,11 +120,11 @@ const TravelInfo = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             {smartTips.map((tip, index) => (
-              <Card key={index} className={`hover:shadow-xl transition-all duration-300 ${tip.important ? 'ring-2 ring-emerald-200' : ''}`}>
+              <Card key={index} className={`hover:shadow-xl transition-all duration-300 ${tip.important ? 'ring-2 ring-brand-200' : ''}`}>
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-emerald-100 p-3 rounded-lg">
-                      <tip.icon className="w-6 h-6 text-emerald-600" />
+                    <div className="bg-brand-100 p-3 rounded-lg">
+                      <tip.icon className="w-6 h-6 text-brand-600" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
@@ -139,8 +139,8 @@ const TravelInfo = () => {
                     </div>
                   </div>
                   {tip.important && (
-                    <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 mt-4">
-                      <p className="text-emerald-800 text-sm font-medium">⚠️ Important: Please ensure compliance before travel</p>
+                    <div className="bg-brand-50 border border-brand-200 rounded-lg p-3 mt-4">
+                      <p className="text-brand-800 text-sm font-medium">⚠️ Important: Please ensure compliance before travel</p>
                     </div>
                   )}
                 </CardContent>
@@ -166,7 +166,7 @@ const TravelInfo = () => {
                   <div className="space-y-3">
                     {section.items.map((item, idx) => (
                       <div key={idx} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-brand-600 rounded-full mt-2 flex-shrink-0"></div>
                         <p className="text-gray-700">{item}</p>
                       </div>
                     ))}
@@ -202,11 +202,11 @@ const TravelInfo = () => {
       </section>
 
       {/* Quick Reference */}
-      <section className="py-20 bg-emerald-600">
+      <section className="py-20 bg-brand-600">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Quick Reference</h2>
-            <p className="text-xl text-emerald-100">Keep these handy during your trip</p>
+            <p className="text-xl text-brand-100">Keep these handy during your trip</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -231,7 +231,7 @@ const TravelInfo = () => {
                 <CardContent className="p-6 text-center">
                   <item.icon className="w-12 h-12 text-white mb-4 mx-auto" />
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-emerald-100">{item.info}</p>
+                  <p className="text-brand-100">{item.info}</p>
                 </CardContent>
               </Card>
             ))}
@@ -265,6 +265,7 @@ const TravelInfo = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

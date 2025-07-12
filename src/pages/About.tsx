@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Trophy, Users, MapPin, Award } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const About = () => {
   const values = [
@@ -139,6 +140,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
