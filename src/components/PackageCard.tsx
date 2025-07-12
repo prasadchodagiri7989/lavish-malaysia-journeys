@@ -76,9 +76,9 @@ const PackageCard = ({
             
             {/* Pricing */}
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-emerald-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-emerald-800 mb-2">Adult Price</h4>
-                <div className="text-2xl font-bold text-emerald-600">{priceDetails.adult.price}</div>
+              <div className="bg-brand-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-brand-800 mb-2">Adult Price</h4>
+                <div className="text-2xl font-bold text-brand-600">{priceDetails.adult.price}</div>
                 <div className="text-sm text-gray-600">{priceDetails.adult.age}</div>
               </div>
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -110,7 +110,7 @@ const PackageCard = ({
               <div className="grid grid-cols-1 gap-2">
                 {location.highlights.map((highlight, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <div className="w-2 h-2 bg-brand-600 rounded-full"></div>
                     <span className="text-gray-700">{highlight}</span>
                   </div>
                 ))}
@@ -123,7 +123,7 @@ const PackageCard = ({
               <div className="grid grid-cols-1 gap-2">
                 {tourDetails.includes.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                    <div className="w-2 h-2 bg-brand-600 rounded-full"></div>
                     <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
@@ -183,8 +183,8 @@ const PackageCard = ({
         </div>
 
         <div className="grid grid-cols-2 gap-3 mb-4">
-          <div className="text-center p-2 bg-emerald-50 rounded">
-            <div className="font-semibold text-emerald-600">{priceDetails.adult.price}</div>
+          <div className="text-center p-2 bg-brand-50 rounded">
+            <div className="font-semibold text-brand-600">{priceDetails.adult.price}</div>
             <div className="text-xs text-gray-600">Adult</div>
           </div>
           <div className="text-center p-2 bg-blue-50 rounded">

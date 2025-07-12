@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -51,6 +52,20 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom brand color replacing emerald */
+    --brand: 345 85% 27%;
+    --brand-foreground: 0 0% 100%;
+    --brand-50: 345 85% 97%;
+    --brand-100: 345 85% 90%;
+    --brand-200: 345 85% 80%;
+    --brand-300: 345 85% 70%;
+    --brand-400: 345 85% 50%;
+    --brand-500: 345 85% 40%;
+    --brand-600: 345 85% 27%;
+    --brand-700: 345 85% 20%;
+    --brand-800: 345 85% 15%;
+    --brand-900: 345 85% 10%;
   }
 
   .dark {
@@ -89,6 +104,20 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom brand color for dark mode */
+    --brand: 345 85% 35%;
+    --brand-foreground: 0 0% 100%;
+    --brand-50: 345 85% 5%;
+    --brand-100: 345 85% 10%;
+    --brand-200: 345 85% 15%;
+    --brand-300: 345 85% 25%;
+    --brand-400: 345 85% 35%;
+    --brand-500: 345 85% 45%;
+    --brand-600: 345 85% 55%;
+    --brand-700: 345 85% 65%;
+    --brand-800: 345 85% 80%;
+    --brand-900: 345 85% 90%;
   }
 }
 

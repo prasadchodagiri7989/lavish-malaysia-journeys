@@ -44,7 +44,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <MapPin className="w-8 h-8 text-emerald-600" />
+            <MapPin className="w-8 h-8 text-brand-600" />
             <div>
               <div className={`text-xl font-bold transition-colors duration-300 ${
                 !isHome ? 'text-gray-900' : !isScrolled ? 'text-white' : 'text-gray-900'
@@ -66,9 +66,9 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-emerald-600 ${
+                className={`text-sm font-medium transition-colors hover:text-brand-600 ${
                   isActive(item.path)
-                    ? "text-emerald-600"
+                    ? "text-brand-600"
                     : !isHome
                       ? "text-gray-700"
                       : !isScrolled
@@ -79,7 +79,7 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700">
+            <Button size="sm" className="bg-brand-600 hover:bg-brand-700">
               Book Now
             </Button>
           </div>
@@ -108,8 +108,8 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-emerald-600 ${
-                    isActive(item.path) ? "text-emerald-600" : "text-gray-700"
+                  className={`block px-3 py-2 text-base font-medium transition-colors hover:text-brand-600 ${
+                    isActive(item.path) ? "text-brand-600" : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -117,7 +117,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 w-full">
+                <Button size="sm" className="bg-brand-600 hover:bg-brand-700 w-full">
                   Book Now
                 </Button>
               </div>

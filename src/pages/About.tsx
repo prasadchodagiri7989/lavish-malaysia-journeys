@@ -36,7 +36,7 @@ const About = () => {
       <WhatsAppButton />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-brand-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">About Lavish Holidays DMC</h1>
@@ -66,7 +66,7 @@ const About = () => {
                 alt="Team planning travel"
                 className="rounded-lg shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-emerald-600 text-white p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -right-6 bg-brand-600 text-white p-6 rounded-lg shadow-xl">
                 <div className="text-3xl font-bold">5+</div>
                 <div className="text-sm">Years Experience</div>
               </div>
@@ -81,8 +81,8 @@ const About = () => {
                 <Card key={index} className="text-center p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                   <CardContent className="p-0">
                     <div className="mb-6">
-                      <div className="mx-auto w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center">
-                        <value.icon className="w-8 h-8 text-emerald-600" />
+                      <div className="mx-auto w-16 h-16 bg-brand-100 rounded-full flex items-center justify-center">
+                        <value.icon className="w-8 h-8 text-brand-600" />
                       </div>
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{value.title}</h3>
@@ -94,13 +94,13 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="bg-emerald-600 rounded-2xl p-12 text-center">
+          <div className="bg-brand-600 rounded-2xl p-12 text-center">
             <h2 className="text-3xl font-bold text-white mb-12">Our Achievements</h2>
             <div className="grid md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-white">
                   <div className="text-4xl font-bold mb-2">{stat.number}</div>
-                  <div className="text-emerald-100">{stat.label}</div>
+                  <div className="text-brand-100">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -129,7 +129,7 @@ const About = () => {
               ].map((feature, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
                   <CardContent className="p-0">
-                    <feature.icon className="w-12 h-12 text-emerald-600 mb-4" />
+                    <feature.icon className="w-12 h-12 text-brand-600 mb-4" />
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
                     <p className="text-gray-600">{feature.description}</p>
                   </CardContent>

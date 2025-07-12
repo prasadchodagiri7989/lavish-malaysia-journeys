@@ -56,7 +56,7 @@ const AllPackages = () => {
       <WhatsAppButton />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-blue-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-brand-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">All Tour Packages</h1>
