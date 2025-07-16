@@ -183,17 +183,6 @@ const PackageCard = ({
           <span className="text-gray-600 text-sm">{tourDetails.duration}</span>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 mb-4">
-          <div className="text-center p-2 bg-brand-50 rounded">
-            <div className="font-semibold text-brand-600">{priceDetails.adult.price}</div>
-            <div className="text-xs text-gray-600">Adult</div>
-          </div>
-          <div className="text-center p-2 bg-blue-50 rounded">
-            <div className="font-semibold text-blue-600">{priceDetails.child.price}</div>
-            <div className="text-xs text-gray-600">Child</div>
-          </div>
-        </div>
-
         <div className="mb-4">
           <div className="text-sm text-gray-700 line-clamp-2">{location.description}</div>
         </div>
