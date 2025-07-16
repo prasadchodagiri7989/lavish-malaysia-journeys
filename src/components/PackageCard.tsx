@@ -76,11 +76,7 @@ const PackageCard = ({
             
             {/* Pricing */}
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-brand-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-brand-800 mb-2">Adult Price</h4>
-                <div className="text-2xl font-bold text-brand-600">{priceDetails.adult.price}</div>
-                <div className="text-sm text-gray-600">{priceDetails.adult.age}</div>
-              </div>
+              
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">Child Price</h4>
                 <div className="text-2xl font-bold text-blue-600">{priceDetails.child.price}</div>

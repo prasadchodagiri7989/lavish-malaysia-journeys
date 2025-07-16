@@ -221,7 +221,6 @@ const Index = () => {
                     </div>
                     <h3 className="text-3xl font-bold text-gray-900 mb-2">{pkg.title}</h3>
                     <p className="text-lg text-gray-600 mb-4">{pkg.duration}</p>
-                    <div className="text-2xl font-bold text-brand-600 mb-6">{pkg.price}</div>
                     
                     <div className="mb-6">
                       <h4 className="font-semibold text-gray-900 mb-3">Highlights:</h4>
