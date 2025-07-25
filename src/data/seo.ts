@@ -10,11 +10,6 @@ export const seoData: Record<string, { title: string; description: string }> = {
     description:
       "Learn about Lavish Holidays DMC, your trusted Malaysia travel partner.",
   },
-  "/packages": {
-    title: "Packages - Lavish Holidays DMC",
-    description:
-      "Explore curated travel packages to discover the beauty of Malaysia.",
-  },
   "/all-packages": {
     title: "All Packages - Lavish Holidays DMC",
     description:
