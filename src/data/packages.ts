@@ -255,7 +255,7 @@ export const packagesData = [
     "Factory tours",
     "Tasting experiences"
   ],
-  image: "/assets/",
+  image: "/assets/Kuala Lumpur Countryside Tour2.jpeg",
   badge: "VALUE"
 },
 {
@@ -297,7 +297,7 @@ export const packagesData = [
     "Museum tour",
     "Relaxation"
   ],
-  image: "/assets/",
+  image: "/assets/Port Dickson Tour.jpeg",
   badge: "FAMILY"
 },
 {
@@ -340,7 +340,7 @@ export const packagesData = [
     "Cultural Stops",
     "Photo Opportunities"
   ],
-  image: "/assets/",
+  image: "/assets/Kuala Lumpur Countryside Tour.jpeg",
   badge: "ICONIC"
 },
 {
@@ -386,7 +386,7 @@ export const packagesData = [
     "Photography",
     "Lake Cruise"
   ],
-  image: "/assets/",
+  image: "/assets/Putrajaya City Tour.jpeg",
   badge: "MODERN"
 },
 {
@@ -425,7 +425,7 @@ export const packagesData = [
     "Photography",
     "Rainforest Exploration"
   ],
-  image: "/assets/",
+  image: "/assets/Rain Forest & Templer’s Park Tour.jpg",
   badge: "ADVENTURE"
 },
 {
@@ -469,7 +469,7 @@ export const packagesData = [
     "Hill Views",
     "Floral Photography"
   ],
-  image: "/assets/",
+  image: "/assets/Cameron Highland Day Tour.jpeg",
   badge: "HIGHLANDS"
 },
 {
@@ -509,7 +509,7 @@ export const packagesData = [
     "Bird & Butterfly Watching",
     "Leisure Walks"
   ],
-  image: "/assets/",
+  image: "/assets/Park & Garden Tour.jpeg",
   badge: "NATURE"
 },
 {
@@ -547,7 +547,7 @@ export const packagesData = [
     "Live Animal Shows",
     "Photography"
   ],
-  image: "/assets/",
+  image: "/assets/National Zoo Tour.jpeg",
   badge: "WILDLIFE"
 },
 {
@@ -593,7 +593,7 @@ export const packagesData = [
     "City Landmarks",
     "Cultural Exploration"
   ],
-  image: "/assets/",
+  image: "/assets/Penang Island Day Tour.jpeg",
   badge: "ISLAND"
 },
 {
@@ -634,7 +634,7 @@ export const packagesData = [
     "Walking Tour",
     "Cultural Exploration"
   ],
-  image: "/assets/",
+  image: "/assets/Malacca Historical Day Tour.jpeg",
   badge: "HERITAGE"
 },
 {
@@ -672,7 +672,7 @@ export const packagesData = [
     "Photography",
     "Family Friendly"
   ],
-  image: "/assets/",
+  image: "/assets/Fireflies & Blue Tears Tour.jpeg",
   badge: "NIGHT"
 },
 {
@@ -711,7 +711,7 @@ export const packagesData = [
     "Cultural Tour",
     "Photo Sessions"
   ],
-  image: "/assets/",
+  image: "/assets/Sky Mirror & Sekinchan Paddy Field.jpeg",
   badge: "SCENIC"
 },
 {
@@ -749,7 +749,7 @@ export const packagesData = [
       "Sightseeing",
       "Leisure Time"
     ],
-    image: "/assets/",
+    image: "/assets/Genting Highlands Day Tour.jpeg",
     badge: "HIGHLAND"
   },
   {
@@ -787,7 +787,7 @@ export const packagesData = [
       "Zoo & Wildlife",
       "Adventure Games"
     ],
-    image: "/assets/",
+    image: "/assets/Sunway Lagoon Theme Park Tour.jpeg",
     badge: "FUN"
   },
   {
@@ -828,7 +828,7 @@ export const packagesData = [
       "Photography",
       "Cultural Visit"
     ],
-    image: "/assets/",
+    image: "/assets/I-City Shah Alam & Blue Mosque Visit.jpeg",
     badge: "EVENING"
   },
   {
@@ -867,7 +867,7 @@ export const packagesData = [
       "Seafood Meal",
       "Cultural Visit"
     ],
-    image: "/assets/",
+    image: "/assets/Crab Island Tour.jpeg",
     badge: "ISLAND"
   },
 
