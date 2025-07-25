@@ -9,6 +9,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 import PackageCard from "@/components/PackageCard";
 import { packagesData } from "@/data/packages";
+import SplitText from "gsap-trial/SplitText";
 
 const Index = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -96,11 +97,13 @@ const Index = () => {
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Your Gateway to <span className="text-brand-400">Malaysia</span>
             </h1>
+            
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+              
               Tailor-made journeys. Local expertise. Authentic experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/packages">
+              <Link to="/all-packages">
                 <Button size="lg" className="bg-brand-600 hover:bg-brand-700 text-white px-8 py-3 text-lg font-semibold transition-all hover:scale-105">
                   Explore Tours
                 </Button>

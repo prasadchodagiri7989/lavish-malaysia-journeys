@@ -74,15 +74,7 @@ const PackageCard = ({
           <CardContent className="p-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">{title}</h2>
             
-            {/* Pricing */}
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Child Price</h4>
-                <div className="text-2xl font-bold text-blue-600">{priceDetails.child.price}</div>
-                <div className="text-sm text-gray-600">{priceDetails.child.age}</div>
-              </div>
-            </div>
+      
 
             {/* Tour Details */}
             <div className="mb-6">
@@ -184,13 +176,17 @@ const PackageCard = ({
         </div>
 
         <div className="flex gap-2">
-          <Button 
-            onClick={handleWhatsAppClick}
-            className="bg-brand-500 hover:bg-brand-600 text-white flex-1"
-          >
-            <MessageCircle className="w-4 h-4 mr-2" />
-            Book Now
-          </Button>
+<Button
+  onClick={handleWhatsAppClick}
+  className="text-white flex-1 bg-cover bg-center bg-no-repeat hover:opacity-90"
+  style={{
+    backgroundImage: "url('/assets/book-now.png')",
+  }}
+>
+  <MessageCircle className="w-4 h-4 mr-2" />
+  Book Now
+</Button>
+
         </div>
       </CardContent>
     </Card>

@@ -5,8 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Camera, Clock } from "lucide-react";
 import Footer from "@/components/Footer";
+import { useNavigate } from 'react-router-dom';
 
 const Destinations = () => {
+    const navigate = useNavigate();
+
   const destinations = [
     {
       name: "Kuala Lumpur",
@@ -123,12 +126,25 @@ const Destinations = () => {
                     </div>
                     
                     <div className="flex gap-2">
-                      <Button size="sm" className="bg-brand-600 hover:bg-brand-700 flex-1 text-xs">
-                        View Packages
-                      </Button>
-                      <Button size="sm" variant="outline" className="border-brand-600 text-brand-600 text-xs">
-                        Learn More
-                      </Button>
+
+      <Button
+        size="sm"
+        className="bg-brand-600 hover:bg-brand-700 flex-1 text-xs"
+        onClick={() => navigate('/all-packages')}
+      >
+        View Packages
+      </Button>
+
+      <Button
+        size="sm"
+        variant="outline"
+        className="border-brand-600 text-brand-600 text-xs"
+        onClick={() => navigate('/contact')} 
+      >
+        Learn More
+      </Button>
+
+
                     </div>
                   </CardContent>
                 </div>

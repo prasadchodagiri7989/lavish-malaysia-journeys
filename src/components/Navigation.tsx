@@ -35,14 +35,18 @@ const Navigation = () => {
   return (
 <nav
   style={{ height: '64px', transform: 'translateZ(0)', willChange: 'transform' }}
-  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    isHome
-      ? isScrolled
-        ? 'bg-brand backdrop-blur-md shadow-lg'
-        : 'bg-transparent'
-      : 'bg-brand backdrop-blur-md shadow-lg'
-  }`}
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-no-repeat bg-cover bg-center
+    ${
+      isHome
+        ? isScrolled
+          ? 'backdrop-blur-md shadow-lg bg-[url("/assets/mobile-navbar.png")] md:bg-[url("/assets/desktop-navbar.png")]'
+          : 'bg-transparent'
+        : 'backdrop-blur-md shadow-lg bg-[url("/assets/mobile-navbar.png")] md:bg-[url("/assets/desktop-navbar.png")]'
+    }
+  `}
 >
+
+
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
