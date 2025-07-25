@@ -48,7 +48,7 @@ const PackageCard = ({
   onBookNow
 }: PackageCardProps) => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "917989152819";
+    const phoneNumber = "601126122956";
     const message = `Hi! I'm interested in the "${title}" package. Can you provide more details?`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -138,6 +138,9 @@ const PackageCard = ({
             <Button 
               onClick={handleWhatsAppClick}
               className="bg-brand-500 hover:bg-brand-600 text-white flex-1"
+                style={{
+    backgroundImage: "url('/assets/book-now.png')",
+  }}
 
             >
               <MessageCircle className="w-5 h-5 mr-2" />

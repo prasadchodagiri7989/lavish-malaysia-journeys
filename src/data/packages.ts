@@ -42,7 +42,7 @@ export const packagesData = [
       "Ride Through Streams",
       "Sofea Jane Waterfall"
     ],
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/ATV Adventure Park Tour.jpeg",
     badge: "POPULAR"
   },
   {
@@ -87,7 +87,7 @@ export const packagesData = [
       "Beach Activities",
       "Photography"
     ],
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/Langkawi Island Hopping.jpeg",
     badge: "BESTSELLER"
   },
   {
@@ -132,7 +132,7 @@ export const packagesData = [
       "Casino (Adults only)",
       "Mountain Views"
     ],
-    image: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/Genting Highlands Day Trip.jpeg",
     badge: "NEW"
   },
   {
@@ -179,7 +179,7 @@ export const packagesData = [
     "Photo stops",
     "Cultural education"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Add image URL if available
+  image: "/assets/Historical Malacca Day Tour.jpeg", // Add image URL if available
   badge: "POPULAR"
 },
 {
@@ -217,7 +217,7 @@ export const packagesData = [
     "Seafood Dining",
     "Sunset Photography"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", // Add image URL if available
+  image: "/assets/Fireflies Tour.jpeg", // Add image URL if available
   badge: "EVENING"
 },
 {
@@ -255,7 +255,7 @@ export const packagesData = [
     "Factory tours",
     "Tasting experiences"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "VALUE"
 },
 {
@@ -297,7 +297,7 @@ export const packagesData = [
     "Museum tour",
     "Relaxation"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "FAMILY"
 },
 {
@@ -340,7 +340,7 @@ export const packagesData = [
     "Cultural Stops",
     "Photo Opportunities"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "ICONIC"
 },
 {
@@ -386,7 +386,7 @@ export const packagesData = [
     "Photography",
     "Lake Cruise"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "MODERN"
 },
 {
@@ -425,7 +425,7 @@ export const packagesData = [
     "Photography",
     "Rainforest Exploration"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "ADVENTURE"
 },
 {
@@ -469,7 +469,7 @@ export const packagesData = [
     "Hill Views",
     "Floral Photography"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "HIGHLANDS"
 },
 {
@@ -509,7 +509,7 @@ export const packagesData = [
     "Bird & Butterfly Watching",
     "Leisure Walks"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "NATURE"
 },
 {
@@ -547,7 +547,7 @@ export const packagesData = [
     "Live Animal Shows",
     "Photography"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "WILDLIFE"
 },
 {
@@ -593,7 +593,7 @@ export const packagesData = [
     "City Landmarks",
     "Cultural Exploration"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "ISLAND"
 },
 {
@@ -634,7 +634,7 @@ export const packagesData = [
     "Walking Tour",
     "Cultural Exploration"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "HERITAGE"
 },
 {
@@ -672,7 +672,7 @@ export const packagesData = [
     "Photography",
     "Family Friendly"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "NIGHT"
 },
 {
@@ -711,7 +711,7 @@ export const packagesData = [
     "Cultural Tour",
     "Photo Sessions"
   ],
-  image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  image: "/assets/",
   badge: "SCENIC"
 },
 {
@@ -749,7 +749,7 @@ export const packagesData = [
       "Sightseeing",
       "Leisure Time"
     ],
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/",
     badge: "HIGHLAND"
   },
   {
@@ -787,7 +787,7 @@ export const packagesData = [
       "Zoo & Wildlife",
       "Adventure Games"
     ],
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/",
     badge: "FUN"
   },
   {
@@ -828,7 +828,7 @@ export const packagesData = [
       "Photography",
       "Cultural Visit"
     ],
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/",
     badge: "EVENING"
   },
   {
@@ -867,7 +867,7 @@ export const packagesData = [
       "Seafood Meal",
       "Cultural Visit"
     ],
-    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/assets/",
     badge: "ISLAND"
   },
 

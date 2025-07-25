@@ -55,28 +55,42 @@ const Contact = () => {
     });
   };
 
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Office Address",
-      details: ["123 Jalan Sultan Ismail", "50250 Kuala Lumpur", "Malaysia"]
-    },
-    {
-      icon: Phone,
-      title: "Phone Numbers",
-      details: ["+60 3-2141 8000", "+60 12-345 6789", "24/7 Emergency Hotline"]
-    },
-    {
-      icon: Mail,
-      title: "Email Addresses",
-      details: ["info@lavishholidaysdmc.com", "bookings@lavishholidaysdmc.com", "support@lavishholidaysdmc.com"]
-    },
-    {
-      icon: Clock,
-      title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Emergency only"]
-    }
-  ];
+const contactInfo = [
+  {
+    icon: MapPin,
+    title: "Office Address",
+    details: [
+      "Suite 102, 3rd Floor Wisma RKT,",
+      "No.2 Jalan Raja Abdullah off",
+      "Jalan Sultan Ismail, 50300,",
+      "Kuala Lumpur"
+    ]
+  },
+  {
+    icon: Phone,
+    title: "Phone Numbers",
+    details: [
+      "+60 11-2612 2956 (Satish – WhatsApp)",
+      "+60 3-2693 7569 (Office)",
+      "+6016 810 2053 (Neta – WhatsApp)"
+    ]
+  },
+  {
+    icon: Mail,
+    title: "Email Address",
+    details: ["lavishholidaysdmc@gmail.com"]
+  },
+  {
+    icon: Clock,
+    title: "Business Hours",
+    details: [
+      "Monday - Friday: 9:00 AM - 6:00 PM",
+      "Saturday: 9:00 AM - 2:00 PM",
+      "Sunday: Emergency Only"
+    ]
+  }
+];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -177,16 +191,21 @@ const Contact = () => {
               {/* Quick Contact Options */}
               <div className="mt-8">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Prefer to call or chat?</h3>
-                <div className="flex gap-4">
-                  <Button className="flex-1 bg-brand-500 hover:bg-brand-600 text-white">
-                    <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp Chat
-                  </Button>
-                  <Button variant="outline" className="flex-1 border-brand-600 text-brand-600">
-                    <Phone className="w-4 h-4 mr-2" />
-                    Call Now
-                  </Button>
-                </div>
+<div className="flex gap-4">
+  <a href="https://wa.me/601126122956" target="_blank" rel="noopener noreferrer" className="flex-1">
+    <Button className="w-full bg-brand-500 hover:bg-brand-600 text-white">
+      <MessageCircle className="w-4 h-4 mr-2" />
+      WhatsApp Us
+    </Button>
+  </a>
+  <a href="tel:+60326937569" className="flex-1">
+    <Button variant="outline" className="w-full border-brand-600 text-brand-600">
+      <Phone className="w-4 h-4 mr-2" />
+      Call Office
+    </Button>
+  </a>
+</div>
+
               </div>
             </div>
 

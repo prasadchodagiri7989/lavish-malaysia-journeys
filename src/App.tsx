@@ -21,7 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <SEO /> {/* ✅ dynamic Helmet here */}
+        <SEO />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />

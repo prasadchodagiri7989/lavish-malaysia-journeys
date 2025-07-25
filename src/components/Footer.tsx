@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
 
@@ -9,13 +8,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-          <Link to="/" className="flex items-center">
-            <img
-              src="/assets/logo.png"
-              alt="Lavish Holidays Logo"
-              className="h-12 w-auto transition-opacity duration-300"
-            />
-          </Link>
+            <Link to="/" className="flex items-center mb-4">
+              <img
+                src="/assets/logo.png"
+                alt="Lavish Holidays Logo"
+                className="h-12 w-auto transition-opacity duration-300"
+              />
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Your trusted partner in creating authentic Malaysian travel experiences. 
               Local expertise, tailor-made journeys.
@@ -61,17 +60,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-brand-400" />
-                <span className="text-gray-400 text-sm">+60 12 345 6789</span>
+              <div className="flex items-start gap-2">
+                <Phone className="w-4 h-4 text-brand-400 mt-1" />
+                <div className="text-gray-400 text-sm">
+                  <div>+60 11-2612 2956 (Satish – WhatsApp)</div>
+                  <div>+60 3-2693 7569 (Office)</div>
+                  <div>+6016 810 2053 (Neta – WhatsApp)</div>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-400" />
-                <span className="text-gray-400 text-sm">info@lavishholidaysdmc.com</span>
+                <span className="text-gray-400 text-sm">lavishholidaysdmc@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-brand-400" />
-                <span className="text-gray-400 text-sm">WhatsApp Available 24/7</span>
+                <span className="text-gray-400 text-sm">WhatsApp Support 24/7</span>
               </div>
             </div>
           </div>

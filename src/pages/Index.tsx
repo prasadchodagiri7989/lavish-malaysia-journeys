@@ -292,7 +292,7 @@ const Index = () => {
       </section>
 
       {/* Quick Contact CTA */}
-      <section className="py-20 bg-brand-600">
+      <section className="py-20 bg-brand-600" style={{ backgroundImage: "url('/assets/ready-to-explore.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Explore Malaysia?</h2>
           <p className="text-xl text-brand-100 mb-8">

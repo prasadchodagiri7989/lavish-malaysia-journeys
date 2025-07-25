@@ -202,7 +202,7 @@ const TravelInfo = () => {
       </section>
 
       {/* Quick Reference */}
-      <section className="py-20 bg-brand-600">
+      <section className="py-20 bg-brand-600"  style={{ backgroundImage: "url('/assets/ready-to-explore.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Quick Reference</h2>

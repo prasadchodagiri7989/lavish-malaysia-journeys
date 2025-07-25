@@ -95,7 +95,7 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="bg-brand-600 rounded-2xl p-12 text-center">
+          <div className="bg-brand-600 rounded-2xl p-12 text-center" style={{ backgroundImage: "url('/assets/ready-to-explore.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <h2 className="text-3xl font-bold text-white mb-12">Our Achievements</h2>
             <div className="grid md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
