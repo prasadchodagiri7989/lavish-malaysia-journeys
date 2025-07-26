@@ -78,7 +78,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Address",
-    details: ["lavishholidaysdmc@gmail.com"]
+    details: ["lavisholidaysdmc@gmail.com"]
   },
   {
     icon: Clock,

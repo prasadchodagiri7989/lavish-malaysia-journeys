@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-400" />
-                <span className="text-gray-400 text-sm">lavishholidaysdmc@gmail.com</span>
+                <span className="text-gray-400 text-sm">lavisholidaysdmc@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-brand-400" />
