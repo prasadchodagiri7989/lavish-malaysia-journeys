@@ -12,7 +12,7 @@ const TravelInfo = () => {
       icon: Plane,
       title: "Visa Requirements",
       badge: "UPDATED",
-      content: "Indian tourists enjoy visa-free entry to Malaysia until December 2024. Stay up to 30 days for tourism purposes. Passport must be valid for at least 6 months.",
+      content: "Indian tourists enjoy visa-free entry to Malaysia until December 2026. Stay up to 30 days for tourism purposes. Passport must be valid for at least 6 months.",
       important: true
     },
     {
