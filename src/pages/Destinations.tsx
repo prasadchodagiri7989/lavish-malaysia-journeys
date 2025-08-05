@@ -14,7 +14,7 @@ const Destinations = () => {
     {
       name: "Kuala Lumpur",
       description: "Malaysia's vibrant capital city, where modern skyscrapers meet colonial architecture. Experience the iconic Petronas Twin Towers, bustling street markets, and diverse culinary scene.",
-      image: "https://images.unsplash.com/photo-1596414086775-3e321ab08f36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/assets/Kuala Lumpur Countryside Tour2.jpeg",
       highlights: ["Petronas Twin Towers", "Batu Caves", "Central Market", "Merdeka Square"],
       duration: "2-3 days",
       bestFor: "Culture & Shopping"
@@ -22,7 +22,7 @@ const Destinations = () => {
     {
       name: "Langkawi",
       description: "A tropical paradise of 99 islands offering pristine beaches, clear waters, and duty-free shopping. Perfect for relaxation and water activities.",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "assets/Langkawi Island Hopping.jpeg",
       highlights: ["Pantai Cenang", "Cable Car", "Underwater World", "Island Hopping"],
       duration: "3-4 days",
       bestFor: "Beach & Adventure"
@@ -30,7 +30,7 @@ const Destinations = () => {
     {
       name: "Penang",
       description: "UNESCO World Heritage site known as the 'Pearl of the Orient'. Famous for its historical Georgetown, street art, and incredible street food scene.",
-      image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "assets/Penang Island Day Tour.jpeg",
       highlights: ["George Town", "Penang Hill", "Street Food", "Clan Houses"],
       duration: "2-3 days",
       bestFor: "Heritage & Food"
@@ -38,7 +38,7 @@ const Destinations = () => {
     {
       name: "Cameron Highlands",
       description: "Cool mountain retreat famous for tea plantations, strawberry farms, and colonial-era charm. Escape the tropical heat in this hill station.",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "assets/Cameron Highland Day Tour.jpeg",
       highlights: ["Tea Plantations", "Strawberry Farms", "Mossy Forest", "Colonial Buildings"],
       duration: "2-3 days",
       bestFor: "Nature & Relaxation"
@@ -54,7 +54,7 @@ const Destinations = () => {
     {
       name: "Melaka",
       description: "Historic port city blending Malay, Chinese, Indian, and European influences. A UNESCO World Heritage site with rich cultural diversity.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "assets/Malacca Historical Day Tour.jpeg",
       highlights: ["A Famosa Fort", "Jonker Street", "River Cruise", "Baba Nyonya Heritage"],
       duration: "1-2 days",
       bestFor: "History & Culture"

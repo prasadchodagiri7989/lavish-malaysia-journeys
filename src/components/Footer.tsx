@@ -63,9 +63,9 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-brand-400 mt-1" />
                 <div className="text-gray-400 text-sm">
-                  <div>+60 11-2612 2956 (Satish – WhatsApp)</div>
+                  <div>+60 16 810 2053 (Neta)</div>
+                  <div>+60 11-2612 2956 (Satish)</div>
                   <div>+60 3-2693 7569 (Office)</div>
-                  <div>+6016 810 2053 (Neta – WhatsApp)</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">

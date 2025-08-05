@@ -53,7 +53,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="/assets/logo.png"
+              src="/assets/new_logo.png"
               alt="Lavish Holidays Logo"
               className="h-12 w-auto transition-opacity duration-300"
             />

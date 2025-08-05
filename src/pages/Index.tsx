@@ -95,12 +95,12 @@ const Index = () => {
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Your Gateway to <span className="text-brand-400">Malaysia</span>
+              Your Trusted Partner <span className="text-brand-400">Malaysia's Most Reliable DMC</span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
               
-              Tailor-made journeys. Local expertise. Authentic experiences.
+              We Don’t Just Plan Trips, We Create Stories
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/all-packages">
